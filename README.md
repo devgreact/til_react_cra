@@ -223,7 +223,7 @@ npx eslint --init
 npm i prettier -D
 ```
 
-#### 5.2.2. `.prettierrc.json`
+#### 5.2.2. `.prettierrc.json` 파일생성
 
 ```json
 {
