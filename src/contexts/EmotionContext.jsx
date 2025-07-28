@@ -1,4 +1,8 @@
 import { createContext, useEffect, useReducer, useState } from "react";
+
+export const EmotionContext = createContext();
+
+
 // 1. 초기값
 const initialState = "happy";
 // 2. 리듀서함수
@@ -16,7 +20,6 @@ function reducer(state, action) {
       return state;
   }
 }
-export const EmotionContext = createContext();
 export const EmotionContextProvider = ({ children }) => {
   // js 자리
   const [emotion, dispatch] = useReducer(reducer, initialState);
